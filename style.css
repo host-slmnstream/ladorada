@@ -46,6 +46,7 @@ header {
     background-size: cover;
 }
 .main-img {
+    height: auto;
     width: 100%;
 }
 .navbar .navbar-toggler:focus {
