@@ -18,7 +18,7 @@ html{
     font-size: 10px;
 }
 header {
-    background-image: url(img/DSC06181.webp);
+    background-image: url(img/DSC06181.png);
     background-attachment: fixed;
     height: 660px;
     width: 100%;
@@ -28,9 +28,6 @@ header {
 }
 .navbar .navbar-toggler:focus {
     box-shadow: none;
-}
-.section-head {
-
 }
 .mapouter{position:relative;
     text-align:center;
@@ -48,3 +45,10 @@ header {
     font-size: 40px;
     letter-spacing: 4px;
 }
+svg {
+    width: 1em;
+    height: 1em;
+   vertical-align: -0.15em;
+   display: inline-block;
+}
+
