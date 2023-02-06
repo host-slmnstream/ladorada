@@ -16,14 +16,14 @@
   
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg my-navbar text-uppercase">
+    <nav class="navbar navbar-expand-lg my-navbar">
         <div class="container">
-          <a class="navbar-brand text-dark fs-4 ps-2 fw-bold text-lowercase" href="#" id="logo">La Dorada</a>
+          <a class="navbar-brand text-dark fs-4 ps-2 fw-bold" href="#" id="logo">La Dorada</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold p-2">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold p-2 text-uppercase">
               <li class="nav-item active">
                 <a class="nav-link text-dark" aria-current="page" href="./index.html">Accueil</a>
               </li>
@@ -43,7 +43,7 @@
 
     <!-- MENU -->
     <div class="container mt-5">
-      <h1 class="text-center fs-1 text-uppercase pb-2" id="heading">Our Menu</h1>
+      <h2 class="text-center fs-1 pb-2 text-capitalize" id="heading">Votre Menu</h2>
       <div class="categories text-center">
           <button type="button" class="btn btn-outline-dark mx-1 my-2" id="efBtn">Entrées Froides</button>
           <button type="button" class="btn btn-outline-dark mx-1 my-2" id="ecBtn">Entrées Chaudes</button>
@@ -851,7 +851,6 @@
 
 
     <script>
-
         const button = document.getElementById('rs-menu-btn');
         button.addEventListener('click', function() {
         const link = document.createElement('a');
