@@ -6,13 +6,780 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzeria - La Dorada</title>
     <link rel="shortcut icon" href="img/fish.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
 </head>
 <body class="bg-light">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg my-navbar text-uppercase">
+        <div class="container">
+          <a class="navbar-brand text-dark fs-4 ps-2 fw-bold text-lowercase" href="#" id="logo">La Dorada</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold p-2">
+              <li class="nav-item active">
+                <a class="nav-link text-dark" aria-current="page" href="./index.html">Accueil</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-dark" aria-current="page" href="./index.html#menu">menu</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-dark" aria-current="page" href="./index.html#about">about</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-dark" aria-current="page" href="./index.html#contact">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- MENU -->
+    <div class="container mt-5">
+      <h1 class="text-center fs-1 text-uppercase pb-2" id="heading">Our Menu</h1>
+      <div class="categories text-center">
+          <button type="button" class="btn btn-outline-dark mx-1 my-2" id="piBtn">Pizzas</button>
+          <button type="button" class="btn btn-outline-dark mx-1 my-2" id="bBtn">Boissons</button>
+          <button type="button" class="btn btn-outline-dark mx-1 my-2" id="jBtn">Jus</button>
+          <button type="button" class="btn btn-outline-dark mx-1 my-2" id="hBtn">Hamburgers</button>
+          <button type="button" class="btn btn-outline-dark mx-1 my-2" id="pctBtn">Paninis & Chawarma & Tacos</button>
+          <button type="button" class="btn btn-outline-dark mx-1 my-2" id="dBtn">Desserts</button>
+          <button type="button" class="btn btn-outline-danger mx-1 my-2" id="pz-menu-btn">PDF</button>
+
+      </div>
+  </div>
+
+
+
+  <div class="container mt-4">
+
+ <!-- ____________________________________________________________________________ -->
+
+
+<!-- Pizzas -->
+
+    <!-- Pizza Poulet -->
+    <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pi">
+      <img onerror="this.onerror=null;this.src='img/item-11.png';" src="img/img.png" class="card-img-top mealimg" alt="title">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Pizza Poulet</h5>
+          <p class="card-text mealtext"></p>
+          <div class="card-subtitle text-muted mealprice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><span class="fw-bold">M</span> &nbsp; 50dh</li>
+              <li class="list-group-item"><span class="fw-bold">G</span> &nbsp; 70dh</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
     
+    <!-- Pizza Margarita -->
+    <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pi">
+      <img onerror="this.onerror=null;this.src='img/item-11.png';" src="img/img.png" class="card-img-top mealimg" alt="title">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Pizza Margarita</h5>
+          <p class="card-text mealtext">Sauce tomone, Mozzarella, Origan, Olive noire</p>
+          <div class="card-subtitle text-muted mealprice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><span class="fw-bold">M</span> &nbsp; 40dh</li>
+              <li class="list-group-item"><span class="fw-bold">G</span> &nbsp; 55dh</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    
+    <!-- Pizza Napolitaine -->
+    <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pi">
+      <img onerror="this.onerror=null;this.src='img/item-11.png';" src="img/img.png" class="card-img-top mealimg" alt="title">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Pizza Napolitaine</h5>
+          <p class="card-text mealtext">Sauce tomate, Mazzarella, Anchois, Origan, Olive noire</p>
+          <div class="card-subtitle text-muted mealprice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><span class="fw-bold">M</span> &nbsp; 45dh</li>
+              <li class="list-group-item"><span class="fw-bold">G</span> &nbsp; 55dh</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    
+    <!-- Pizza Bolonais -->
+    <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pi">
+      <img onerror="this.onerror=null;this.src='img/item-11.png';" src="img/img.png" class="card-img-top mealimg" alt="title">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Pizza Bolonais</h5>
+          <p class="card-text mealtext">Souce tomate, Mozzarella, Viande hachée, Champignon, Origan, Olive noire</p>
+          <div class="card-subtitle text-muted mealprice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><span class="fw-bold">M</span> &nbsp; 50dh</li>
+              <li class="list-group-item"><span class="fw-bold">G</span> &nbsp; 70dh</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    
+    <!-- Pizza Végétariene -->
+    <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pi">
+      <img onerror="this.onerror=null;this.src='img/item-11.png';" src="img/img.png" class="card-img-top mealimg" alt="title">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Pizza Végétariene</h5>
+          <p class="card-text mealtext">Soice tomate, Mozzarella, Oubergine, Courgete, Poivrons, Origan, Olive noire</p>
+          <div class="card-subtitle text-muted mealprice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><span class="fw-bold">M</span> &nbsp; 45dh</li>
+              <li class="list-group-item"><span class="fw-bold">G</span> &nbsp; 55dh</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    
+    <!-- Pizza Marinera -->
+    <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pi">
+      <img onerror="this.onerror=null;this.src='img/item-11.png';" src="img/img.png" class="card-img-top mealimg" alt="title">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Pizza Marinera</h5>
+          <p class="card-text mealtext">Sauce tomote Mozzarella Calamar Crevette Champignon Origan Olive noire</p>
+          <div class="card-subtitle text-muted mealprice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><span class="fw-bold">M</span> &nbsp; 65dh</li>
+              <li class="list-group-item"><span class="fw-bold">G</span> &nbsp; 85dh</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    
+    <!-- Pizza au Thon -->
+    <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pi">
+      <img onerror="this.onerror=null;this.src='img/item-11.png';" src="img/img.png" class="card-img-top mealimg" alt="title">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Pizza au Thon</h5>
+          <p class="card-text mealtext">Sauce tomate, Mozzarelia, Thon, Poivron, Origan, Olive noire</p>
+          <div class="card-subtitle text-muted mealprice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><span class="fw-bold">M</span> &nbsp; 45dh</li>
+              <li class="list-group-item"><span class="fw-bold">G</span> &nbsp; 60dh</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    
+    <!-- Pizza 4 Fromages -->
+    <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pi">
+      <img onerror="this.onerror=null;this.src='img/item-11.png';" src="img/img.png" class="card-img-top mealimg" alt="title">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Pizza 4 Fromages</h5>
+          <p class="card-text mealtext">Souce tomate, Mozzarella, Roc Bleu, Edom, Holland</p>
+          <div class="card-subtitle text-muted mealprice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><span class="fw-bold">M</span> &nbsp; 50dh</li>
+              <li class="list-group-item"><span class="fw-bold">G</span> &nbsp; 70dh</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    
+    <!-- Pizza 4 Saisons -->
+    <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pi">
+      <img onerror="this.onerror=null;this.src='img/item-11.png';" src="img/img.png" class="card-img-top mealimg" alt="title">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Pizza 4 Saisons</h5>
+          <p class="card-text mealtext">Souce tomate, Mozzarella, Crevette, Calamar, Viande Hachée, Végétal, Origan</p>
+          <div class="card-subtitle text-muted mealprice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><span class="fw-bold">M</span> &nbsp; 70dh</li>
+              <li class="list-group-item"><span class="fw-bold">G</span> &nbsp; 85dh</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    
+    <!-- Pizza Royal -->
+    <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pi">
+      <img onerror="this.onerror=null;this.src='img/item-11.png';" src="img/img.png" class="card-img-top mealimg" alt="title">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Pizza Royal</h5>
+          <p class="card-text mealtext">Sauce tomate, Mozzarella, Crevette, Calamar, Champignon, Thon, Poivron, Origan, Olive noire</p>
+          <div class="card-subtitle text-muted mealprice">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><span class="fw-bold">M</span> &nbsp; 70dh</li>
+              <li class="list-group-item"><span class="fw-bold">G</span> &nbsp; 90dh</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    
+
+<!-- ____________________________________________________________________________ -->
+
+<!-- Boissons -->
+
+    <!-- Soda Normal -->
+    <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="b">
+      <img onerror="this.onerror=null;this.src='img/item-1.png';" src="img/SodaNormal.png" class="card-img-top mealimg" alt="Soda Normal">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Soda Normal</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">12dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Soda Canette -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="b">
+      <img onerror="this.onerror=null;this.src='img/item-1.png';" src="img/SodaCanette.png" class="card-img-top mealimg" alt="Soda Canette">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Soda Canette</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">14dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Oulmès (Petit) -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="b">
+      <img onerror="this.onerror=null;this.src='img/item-1.png';" src="img/Oulmes-p.png" class="card-img-top mealimg" alt="Oulmès (Petit)">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Oulmès (Petit)</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">10dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Oulmès (Grand) -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="b">
+      <img onerror="this.onerror=null;this.src='img/item-1.png';" src="img/Oulmes-g.png" class="card-img-top mealimg" alt="Oulmès (Grand)">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Oulmès (Grand)</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">15dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Eau Minérale (Petit) -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="b">
+      <img onerror="this.onerror=null;this.src='img/item-1.png';" src="img/EauMinerale-p.png" class="card-img-top mealimg" alt="Eau Minérale (Petit)">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Eau Minérale (Petit)</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">8dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Eau Minérale (Grand) -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="b">
+      <img onerror="this.onerror=null;this.src='img/item-1.png';" src="img/EauMinerale-g.png" class="card-img-top mealimg" alt="Eau Minérale (Grand)">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Eau Minérale (Grand)</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">15dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Bio -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="b">
+      <img onerror="this.onerror=null;this.src='img/item-1.png';" src="img/Bio.png" class="card-img-top mealimg" alt="Bio">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Bio</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">13dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Red Bull -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="b">
+      <img onerror="this.onerror=null;this.src='img/item-1.png';" src="img/RedBull.png" class="card-img-top mealimg" alt="Red Bull">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Red Bull</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">25dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Café -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="b">
+      <img onerror="this.onerror=null;this.src='img/item-1.png';" src="img/Cafe.png" class="card-img-top mealimg" alt="Café">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Café</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">14dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Thé -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="b">
+      <img onerror="this.onerror=null;this.src='img/item-1.png';" src="img/The.png" class="card-img-top mealimg" alt="Thé">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Thé</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">12dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Café Nespresso -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="b">
+      <img onerror="this.onerror=null;this.src='img/item-1.png';" src="img/CafeNespresso.png" class="card-img-top mealimg" alt="Café Nespresso">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Café Nespresso</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">15dh</p>
+      </div>
+  </div>
+
+<!-- ____________________________________________________________________________ -->
+<!-- Jus -->
+
+    <!-- Jus d'Orange -->
+    <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="j">
+      <img onerror="this.onerror=null;this.src='img/item-2.png';" src="img/JusOrange.png" class="card-img-top mealimg" alt="Jus d'Orange">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Jus d'Orange</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">15dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Jus de Citron -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="j">
+      <img onerror="this.onerror=null;this.src='img/item-2.png';" src="img/JusdeCitron.png" class="card-img-top mealimg" alt="Jus de Citron">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Jus de Citron</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">15dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Jus de Fraise -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="j">
+      <img onerror="this.onerror=null;this.src='img/item-2.png';" src="img/JusdeFraise.png" class="card-img-top mealimg" alt="Jus de Fraise">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Jus de Fraise</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">20dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Jus d'Ananas -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="j">
+      <img onerror="this.onerror=null;this.src='img/item-2.png';" src="img/JusAnanas.png" class="card-img-top mealimg" alt="Jus d'Ananas">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Jus d'Ananas</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">25dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Jus de Mangue -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="j">
+      <img onerror="this.onerror=null;this.src='img/item-2.png';" src="img/JusMangue.png" class="card-img-top mealimg" alt="Jus de Mangue">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Jus de Mangue</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">28dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Jus d'Avocat -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="j">
+      <img onerror="this.onerror=null;this.src='img/item-2.png';" src="img/JusAvocat.png" class="card-img-top mealimg" alt="Jus d'Avocat">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Jus d'Avocat</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">23dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Jus Panaché -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="j">
+      <img onerror="this.onerror=null;this.src='img/item-2.png';" src="img/JusPanache.png" class="card-img-top mealimg" alt="Jus Panaché">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Jus Panaché</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">25dh</p>
+      </div>
+  </div>
+
+<!-- ____________________________________________________________________________ -->
+
+<!-- Hamburgers -->
+
+    <!-- Hamburger -->
+    <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="h">
+      <img onerror="this.onerror=null;this.src='img/item-3.png';" src="img/Hamburger.png" class="card-img-top mealimg" alt="Hamburger">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Hamburger</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">32dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Double Burger -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="h">
+      <img onerror="this.onerror=null;this.src='img/item-3.png';" src="img/DoubleBurger.png" class="card-img-top mealimg" alt="Double Burger">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Double Burger</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">45dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Chicken Burger -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="h">
+      <img onerror="this.onerror=null;this.src='img/item-3.png';" src="img/ChickenBurger.png" class="card-img-top mealimg" alt="Chicken Burger">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Chicken Burger</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">35dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Cheese Burger -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="h">
+      <img onerror="this.onerror=null;this.src='img/item-3.png';" src="img/CheeseBurger.png" class="card-img-top mealimg" alt="Cheese Burger">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Cheese Burger</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">35dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Frite -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="h">
+      <img onerror="this.onerror=null;this.src='img/item-3.png';" src="img/Frite.png" class="card-img-top mealimg" alt="Frite">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Frite</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">13dh</p>
+      </div>
+  </div>
+
+<!-- ____________________________________________________________________________ -->
+
+<!-- Paninis & Chawarma & Tacos -->
+
+    <!-- Panini Poulet -->
+    <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pct">
+      <img onerror="this.onerror=null;this.src='img/item-4.png';" src="img/PaniniPoulet.png" class="card-img-top mealimg" alt="Panini Poulet">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Panini Poulet</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">45dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Panini Viande Hachée -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pct">
+      <img onerror="this.onerror=null;this.src='img/item-4.png';" src="img/PaniniViandeHachee.png" class="card-img-top mealimg" alt="Panini Viande Hachée">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Panini Viande Hachée</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">45dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Panini Fruits de Mer -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pct">
+      <img onerror="this.onerror=null;this.src='img/item-4.png';" src="img/PaniniFruitsdeMer.png" class="card-img-top mealimg" alt="Panini Fruits de Mer">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Panini Fruits de Mer</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">50dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Chawarma Poulet -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pct">
+      <img onerror="this.onerror=null;this.src='img/item-4.png';" src="img/ChawarmaPoulet.png" class="card-img-top mealimg" alt="Chawarma Poulet">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Chawarma Poulet</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">45dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Tacos poulet -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pct">
+      <img onerror="this.onerror=null;this.src='img/item-4.png';" src="img/Tacospoulet.png" class="card-img-top mealimg" alt="Tacos poulet">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Tacos poulet</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">40dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Tacos Viande hachée -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pct">
+      <img onerror="this.onerror=null;this.src='img/item-4.png';" src="img/TacosViandehachee.png" class="card-img-top mealimg" alt="Tacos Viande hachée">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Tacos Viande hachée</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">45dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Tacos mixt -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pct">
+      <img onerror="this.onerror=null;this.src='img/item-4.png';" src="img/Tacosmixt.png" class="card-img-top mealimg" alt="Tacos mixt">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Tacos mixt</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">45dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Tacos Fruit de mer -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="pct">
+      <img onerror="this.onerror=null;this.src='img/item-4.png';" src="img/TacosFruitdemer.png" class="card-img-top mealimg" alt="Tacos Fruit de mer">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Tacos Fruit de mer</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">60dh</p>
+      </div>
+  </div>
+
+<!-- ____________________________________________________________________________ -->
+
+<!-- Desserts -->
+
+    <!-- Flan Turon -->
+    <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="d">
+      <img onerror="this.onerror=null;this.src='img/item-5.png';" src="img/FlanTuron.png" class="card-img-top mealimg" alt="Flan Turon">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Flan Turon</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">25dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Flan Blanc -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="d">
+      <img onerror="this.onerror=null;this.src='img/item-5.png';" src="img/FlanBlanc.png" class="card-img-top mealimg" alt="Flan Blanc">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Flan Blanc</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">25dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Crème Caramel -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="d">
+      <img onerror="this.onerror=null;this.src='img/item-5.png';" src="img/CremeCaramel.png" class="card-img-top mealimg" alt="Crème Caramel">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Crème Caramel</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">20dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Tarte Citron -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="d">
+      <img onerror="this.onerror=null;this.src='img/item-5.png';" src="img/TarteCitron.png" class="card-img-top mealimg" alt="Tarte Citron">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Tarte Citron</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">30dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Tarte Oreo -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="d">
+      <img onerror="this.onerror=null;this.src='img/item-5.png';" src="img/TarteOreo.png" class="card-img-top mealimg" alt="Tarte Oreo">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Tarte Oreo</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">30dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Salade de Fruits -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="d">
+      <img onerror="this.onerror=null;this.src='img/item-5.png';" src="img/SaladedeFruits.png" class="card-img-top mealimg" alt="Salade de Fruits">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Salade de Fruits</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">30dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Fruits de Saison -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="d">
+      <img onerror="this.onerror=null;this.src='img/item-5.png';" src="img/FruitsdeSaison.png" class="card-img-top mealimg" alt="Fruits de Saison">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Fruits de Saison</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">35dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Nougat Glacé au miel -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="d">
+      <img onerror="this.onerror=null;this.src='img/item-5.png';" src="img/NougatGlaceaumiel.png" class="card-img-top mealimg" alt="Nougat Glacé au miel">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Nougat Glacé au miel</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">30dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Natillas -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="d">
+      <img onerror="this.onerror=null;this.src='img/item-5.png';" src="img/Natillas.png" class="card-img-top mealimg" alt="Natillas">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Natillas</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">25dh</p>
+      </div>
+  </div>
+
+  
+  <!-- Häagen-Dazs -->
+  <div class="card mx-auto m-2 mealcard" style="width: 18rem;" id="d">
+      <img onerror="this.onerror=null;this.src='img/item-5.png';" src="img/Haagen-Dazs.png" class="card-img-top mealimg" alt="Häagen-Dazs">
+      <div class="card-body">
+          <h5 class="card-title mealtitle">Häagen-Dazs</h5>
+          <p class="card-text mealtext"></p>
+          <p class="card-subtitle text-muted mealprice">35dh</p>
+      </div>
+  </div>
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  </div>
+
+
+    <script>
+      const button = document.getElementById('pz-menu-btn');
+      button.addEventListener('click', function() {
+        const link = document.createElement('a');
+        link.href = 'menus/pizzeria.pdf';
+        link.download = 'pizzeria.pdf';
+        link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
+
+
+      const items = document.querySelectorAll('.card');
+
+      document.querySelector('#piBtn').addEventListener('click', function() {
+          items.forEach(item => {
+              // console.log(item);
+              if (item.id != 'pi') {
+                  item.style.display = 'none';
+              } else {
+                  item.style.display = 'grid';
+              }
+          });
+      });
+      document.querySelector('#bBtn').addEventListener('click', function() {
+          items.forEach(item => {
+              // console.log(item);
+              if (item.id != 'b') {
+                  item.style.display = 'none';
+              } else {
+                  item.style.display = 'grid';
+              }
+          });
+      });
+      document.querySelector('#jBtn').addEventListener('click', function() {
+          items.forEach(item => {
+              // console.log(item);
+              if (item.id != 'j') {
+                  item.style.display = 'none';
+              } else {
+                  item.style.display = 'grid';
+              }
+          });
+      });
+      document.querySelector('#hBtn').addEventListener('click', function() {
+          items.forEach(item => {
+              // console.log(item);
+              if (item.id != 'h') {
+                  item.style.display = 'none';
+              } else {
+                  item.style.display = 'grid';
+              }
+          });
+      });
+      document.querySelector('#pctBtn').addEventListener('click', function() {
+          items.forEach(item => {
+              // console.log(item);
+              if (item.id != 'pct') {
+                  item.style.display = 'none';
+              } else {
+                  item.style.display = 'grid';
+              }
+          });
+      });
+      document.querySelector('#dBtn').addEventListener('click', function() {
+          items.forEach(item => {
+              // console.log(item);
+              if (item.id != 'd') {
+                  item.style.display = 'none';
+              } else {
+                  item.style.display = 'grid';
+              }
+          });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
